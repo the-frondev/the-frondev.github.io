@@ -59,25 +59,32 @@ body {
   border-radius: 2.5rem 4rem 4rem 0;
   margin: -1.5rem 0 0 4rem;
   position: relative;
+  border-color: #0098DA;
+  border-style: solid;
+  border-width: 3px 3px 3px 0;
 }
 .message_currentMessage-box::before {
   content: "";
   width: 2rem;
   height: 1.5rem;
+  box-sizing: border-box;
   background: var(--light25);
   position: absolute;
-  bottom: 0;
+  bottom: -3px;
   left: -2rem;
   border-radius: 1rem 0 0 1rem;
   backdrop-filter: blur(0.75rem);
+  border-color: #0098DA;
+  border-style: solid;
+  border-width: 0 0 3px 3px;
 }
 .message_currentMessage-box::after {
   content: "";
   width: 1.5rem;
   height: calc(100% - 1.75rem);
-  background: radial-gradient(ellipse at -50% 0, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 75%, var(--light25) 72%);
+  background: radial-gradient(ellipse at -50% 0, rgba(0, 0, 0, 0) 0, #0000 73%, #0098DA 73% calc(73% + 3px), var(--light25) 75%);
   position: absolute;
-  top: 0.25rem;
+  top: calc(0.25rem + 3px);;
   left: -1.5rem;
   backdrop-fiter: blur(0.75rem); 
 }
