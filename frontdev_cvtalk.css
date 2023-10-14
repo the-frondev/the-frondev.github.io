@@ -48,7 +48,7 @@ body {
   font-size: 2rem;
 }
 .message_currentMessage-box {
-  width: calc(100% - 4.5rem);
+  width: calc(100% - 5rem);
   padding: 0.75rem;
   box-sizing: border-box;
   display: flex;
@@ -57,7 +57,7 @@ body {
   background: var(--light25);
   backdrop-filter: blur(0.75rem);
   border-radius: 2.5rem 4rem 4rem 0;
-  margin: -1.5rem 0 0 4rem;
+  margin: -1.5rem 0 0 5.5rem;
   position: relative;
   border-color: #0098DA;
   border-style: solid;
