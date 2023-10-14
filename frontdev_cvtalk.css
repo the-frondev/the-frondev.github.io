@@ -55,7 +55,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   background: var(--light25);
   backdrop-filter: blur(0.75rem);
   border-radius: 2.5rem 4rem 4rem 0;
@@ -97,6 +96,8 @@ body {
   gap: 0.25rem;
 }
 .message_currentMessage-text {
+  width: 100%;
+  box-sizing: border-box;
   font-size: 1.75rem;
   color: var(--light);
   display: flex;
