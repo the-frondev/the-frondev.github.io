@@ -20,81 +20,81 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  .message {
-    width: 100%;
-    margin-bottom: 1rem;
-    .message_userBadge {
-      width: 1.25rem;
-      &.message_userBadge-primary {
-        position: relative;
-        margin: 0 0 -1.25rem 2rem;
-        border-radius: 50%;
-      }
-    }
-    .message_viewer {
-      display: flex;
-      .message_viewer-avatarImg {
-        width: 3rem;
-        box-sizing: border-box;
-        border: 1px solid #0098DA;
-        aspect-ratio: 1;
-        border-radius: 50%;
-        margin-right: 1rem;
-      }
-      .message_viewer-name {
-        font-size: 1rem;
-      }
-    }
-    .message_currentMessage-box {
-      width: calc(100% - 3.5rem);
-      padding: 0 0.5rem;
-      box-sizing: border-box;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: var(--light25);
-      backdrop-filter: blur(0.75rem);
-      border-radius: 2.5rem 4rem 4rem 0;
-      margin: -1.5rem 0 0 3.5rem;
-      position: relative;
-      &::before {
-        content: "";
-        width: 2rem;
-        height: 1.5rem;
-        background: var(--light25);
-        position: absolute;
-        bottom: 0;
-        left: -2rem;
-        border-radius: 1rem 0 0 1rem;
-        backdrop-filter: blur(0.75rem);
-      }
-      &::after {
-        content: "";
-        width: 1.5rem;
-        height: calc(100% - 1.75rem);
-        background: radial-gradient(ellipse at -50% 0, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 75%, var(--light25) 72%);
-        position: absolute;
-        top: 0.25rem;
-        left: -1.5rem;
-        backdrop-fiter: blur(0.75rem); 
-      }
-      .message_currentMessage-otherViewerBadges {
-        order: 1;
-        display: flex;
-        align-items: center;
-        gap: 0.25rem;
-      }
-      .message_currentMessage-text {
-        font-size: 1rem;
-        color: var(--light);
-        display: inline-block;
-        & img {
-          width: 1rem;
-          aspect-ratio: 1;
-        }
-      }
-    }
-  }
+}
+.message {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.message_userBadge {
+  width: 1.25rem;
+}
+.message_userBadge .message_userBadge-primary {
+  position: relative;
+  margin: 0 0 -1.25rem 2rem;
+  border-radius: 50%;
+}
+.message_viewer {
+  display: flex;
+}
+.message_viewer-avatarImg {
+  width: 3rem;
+  box-sizing: border-box;
+  border: 1px solid #0098DA;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.message_viewer-name {
+  font-size: 1rem;
+}
+.message_currentMessage-box {
+  width: calc(100% - 3.5rem);
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--light25);
+  backdrop-filter: blur(0.75rem);
+  border-radius: 2.5rem 4rem 4rem 0;
+  margin: -1.5rem 0 0 3.5rem;
+  position: relative;
+}
+.message_currentMessage-box::before {
+  content: "";
+  width: 2rem;
+  height: 1.5rem;
+  background: var(--light25);
+  position: absolute;
+  bottom: 0;
+  left: -2rem;
+  border-radius: 1rem 0 0 1rem;
+  backdrop-filter: blur(0.75rem);
+}
+.message_currentMessage-box::after {
+  content: "";
+  width: 1.5rem;
+  height: calc(100% - 1.75rem);
+  background: radial-gradient(ellipse at -50% 0, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 75%, var(--light25) 72%);
+  position: absolute;
+  top: 0.25rem;
+  left: -1.5rem;
+  backdrop-fiter: blur(0.75rem); 
+}
+.message_currentMessage-otherViewerBadges {
+  order: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.message_currentMessage-text {
+  font-size: 1rem;
+  color: var(--light);
+  display: inline-block;
+}
+.message_currentMessage-text img {
+  width: 1rem;
+  aspect-ratio: 1;
 }
 
 .newMessage {
@@ -114,7 +114,7 @@ body {
 
 .dieingMessage {
   animation-name: newMessage;
-  animation-duration: 800ms;
+  animation-duration: 1.5s;
   animation-iteration-count: 1;
 }
 
