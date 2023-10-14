@@ -57,7 +57,7 @@ body {
   background: var(--light25);
   backdrop-filter: blur(0.75rem);
   border-radius: 2.5rem 4rem 4rem 0;
-  margin: -1.5rem 0 0 6rem;
+  margin: -1.825rem 0 0 5.5rem;
   position: relative;
   border-color: #0098DA;
   border-style: solid;
@@ -84,7 +84,7 @@ body {
   height: calc(100% - 1.75rem);
   background: radial-gradient(ellipse at -50% 0, rgba(0, 0, 0, 0) 0, #0000 73%, #0098DA 73% calc(73% + 3px), var(--light25) 75%);
   position: absolute;
-  top: calc(0.25rem + 2px);;
+  top: calc(0.25rem + 2.5px);;
   left: -1.5rem;
   backdrop-fiter: blur(0.75rem); 
 }
