@@ -30,14 +30,14 @@ body {
 }
 .message_userBadge-primary {
   position: relative;
-  margin: 0 0 -1.75rem 4.25rem;
+  margin: 0 0 -1.5rem 3.75rem;
   border-radius: 50%;
 }
 .message_viewer {
   display: flex;
 }
 .message_viewer-avatarImg {
-  width: 5.5rem;
+  width: 5rem;
   box-sizing: border-box;
   border: 3px solid #0098DA;
   aspect-ratio: 1;
@@ -49,15 +49,16 @@ body {
 }
 .message_currentMessage-box {
   width: calc(100% - 5rem);
-  padding: 0.75rem;
+  padding: 0.25rem 0.75rem;
   box-sizing: border-box;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background: var(--light25);
   backdrop-filter: blur(0.75rem);
   border-radius: 2.5rem 4rem 4rem 0;
-  margin: -1.825rem 0 0 5.5rem;
+  margin: -2.125rem 0 0 5.5rem;
   position: relative;
   border-color: #0098DA;
   border-style: solid;
@@ -93,11 +94,13 @@ body {
   display: flex;
   align-items: center;
   gap: 0.25rem;
+
 }
 .message_currentMessage-text {
   font-size: 1.75rem;
   color: var(--light);
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   gap: 0.125rem;
 }
@@ -136,4 +139,8 @@ body {
   100% {
     opacity: 0;
   }
+}
+
+@media (min-width: 500px) {
+  
 }
