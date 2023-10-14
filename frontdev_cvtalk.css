@@ -37,7 +37,7 @@ body {
   display: flex;
 }
 .message_viewer-avatarImg {
-  width: 3rem;
+  width: 5rem;
   box-sizing: border-box;
   border: 3px solid #0098DA;
   aspect-ratio: 1;
@@ -45,7 +45,7 @@ body {
   margin-right: 1rem;
 }
 .message_viewer-name {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .message_currentMessage-box {
   width: calc(100% - 3.5rem);
@@ -57,7 +57,7 @@ body {
   background: var(--light25);
   backdrop-filter: blur(0.75rem);
   border-radius: 2.5rem 4rem 4rem 0;
-  margin: -1.25rem 0 0 3.5rem;
+  margin: -1.5rem 0 0 4rem;
   position: relative;
 }
 .message_currentMessage-box::before {
@@ -88,15 +88,16 @@ body {
   gap: 0.25rem;
 }
 .message_currentMessage-text {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--light);
   display: flex;
   align-items: center;
   gap: 0.125rem;
 }
 .message_currentMessage-text img {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  aspect-ratio: 1;
   object-fit: contain;
 }
 
