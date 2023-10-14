@@ -90,18 +90,15 @@ body {
   backdrop-fiter: blur(0.75rem); 
 }
 .message_currentMessage-otherViewerBadges {
-  order: 1;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   gap: 0.25rem;
-
 }
 .message_currentMessage-text {
   font-size: 1.75rem;
   color: var(--light);
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
   gap: 0.125rem;
 }
 .message_currentMessage-text img {
