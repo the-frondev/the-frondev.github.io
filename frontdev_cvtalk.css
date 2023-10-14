@@ -48,6 +48,7 @@ body {
   font-size: 1.75rem;
 }
 .message_currentMessage-box {
+  container: message_currentMessage-box;
   width: calc(100% - 5rem);
   padding: 0.25rem 0.75rem;
   box-sizing: border-box;
@@ -85,7 +86,7 @@ body {
   height: calc(100% - 1.75rem);
   background: radial-gradient(ellipse at -50% 0, rgba(0, 0, 0, 0) 0, #0000 73%, #0098DA 73% calc(73% + 3px), var(--light25) 75%);
   position: absolute;
-  top: calc(0.25rem + 2.5px);;
+  top: calc(0.25rem + 2.5px);
   left: -1.5rem;
   backdrop-fiter: blur(0.75rem); 
 }
@@ -138,6 +139,14 @@ body {
   }
 }
 
-@media (min-width: 500px) {
-  
+@container message_currentMessage-box (min-height: 5rem) {
+  .message_currentMessage-box {
+    border-radius: 0 4rem 4rem 2rem;
+    border-width: 3px;
+  }
+  .message_currentMessage-box::before, .message_currentMessage-box::after {
+    content: "";
+    width: 0;
+    height: 0;
+  }
 }
