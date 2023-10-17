@@ -2,7 +2,7 @@
 
 :root {
   --light: #fafafa;
-  --light25: #fafafa40;
+  --dark: #0e0e0e;
 }
 
 body {
@@ -16,7 +16,7 @@ body {
   box-sizing: border-box;
   padding: 0 0.5rem;
   box-sizing: border-box;
-  background: #18181840;
+  background: transparent;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -49,43 +49,38 @@ body {
 }
 .message_currentMessage-box {
   container: message_currentMessage-box;
-  width: calc(100% - 5rem);
-  padding: 0.25rem 0.75rem;
+  width: calc(100% - 3.5rem);
+  padding: 0 1rem;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: var(--light25);
+  align-items: center;
+  background: var(--dark);
   backdrop-filter: blur(0.75rem);
   border-radius: 2.5rem 4rem 4rem 0;
-  margin: -2.125rem 0 0 5.5rem;
+  margin: -1.5rem 0 0 3.5rem;
   position: relative;
-  border-color: #0098DA;
-  border-style: solid;
-  border-width: 3px 3px 3px 0;
 }
 .message_currentMessage-box::before {
   content: "";
   width: 2rem;
   height: 1.5rem;
   box-sizing: border-box;
-  background: var(--light25);
+  background: var(--dark);
   position: absolute;
-  bottom: -3px;
+  top: 1.5rem;
   left: -2rem;
   border-radius: 1rem 0 0 1rem;
   backdrop-filter: blur(0.75rem);
-  border-color: #0098DA;
-  border-style: solid;
-  border-width: 0 0 3px 3px;
 }
 .message_currentMessage-box::after {
   content: "";
   width: 1.5rem;
-  height: calc(100% - 1.75rem);
-  background: radial-gradient(ellipse at -50% 0, rgba(0, 0, 0, 0) 0, #0000 73%, #0098DA 73% calc(73% + 3px), var(--light25) 75%);
+  height: 1.5rem;
+  background: radial-gradient(ellipse at -50% 0, rgba(0, 0, 0, 0) 0, #0000 74%, var(--dark) 75%);
   position: absolute;
-  top: calc(0.25rem + 2.5px);
+  top: 0;
   left: -1.5rem;
   backdrop-fiter: blur(0.75rem); 
 }
