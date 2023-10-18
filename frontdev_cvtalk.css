@@ -7,9 +7,9 @@
 
 body {
   margin: 0;
-  background: var(--dark);
+  /* background: var(--dark);
   width: 100vw;
-  height: 100vh;
+  height: 100vh; */
 }
 
 .messages_container {
@@ -142,14 +142,14 @@ body {
   animation-iteration-count: 1;
 } */
 
-/*@keyframes dieingMessage {
+@keyframes dieingMessage {
   0% {
     opacity: 1;
   }
   100% {
     opacity: 0;
   }
-}*/
+}
 
 @container message_currentMessage-box (min-height: 5rem) {
   .message_currentMessage-box {
