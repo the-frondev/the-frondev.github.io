@@ -33,7 +33,7 @@ body {
 }
 .message_userBadge-primary {
   position: relative;
-  margin: 0 0 -2.5rem 4.75rem;
+  margin: 0 0 -2.5rem 4.5rem;
   border-radius: 50%;
 }
 .message_viewer {
@@ -62,7 +62,7 @@ body {
   font-size: 1.75rem;
   background: #d9d9d980;
   height: max-content;
-  padding: 0.25rem 0.5rem -205.75rem 2.5rem;
+  padding: 0.25rem 0.5rem 4rem 2.5rem;
   border-radius: 2rem;
 }
 .message_currentMessage-container {
@@ -75,7 +75,6 @@ body {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 0.5rem;
   background: var(--light);
   backdrop-filter: blur(0.75rem);
@@ -90,7 +89,7 @@ body {
   box-sizing: border-box;
   background: var(--light);
   position: absolute;
-  top: 1.5rem;
+  top: 2rem;
   left: -2rem;
   border-radius: 1rem 0 0 1rem;
   backdrop-filter: blur(0.75rem);
@@ -101,7 +100,7 @@ body {
   height: 1.5rem;
   background: radial-gradient(ellipse at -50% 0, rgba(0, 0, 0, 0) 0, #0000 74%, var(--light) 75%);
   position: absolute;
-  top: 0;
+  top: 0.5rem;
   left: -1.5rem;
   backdrop-fiter: blur(0.75rem); 
 }
