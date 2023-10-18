@@ -29,11 +29,11 @@ body {
   margin-bottom: 1rem;
 }
 .message_userBadge {
-  width: 2rem;
+  width: 1.5rem;
 }
 .message_userBadge-primary {
   position: relative;
-  margin: 0 0 -1.5rem 3.75rem;
+  margin: 0 0 -2.5rem 4.75rem;
   border-radius: 50%;
 }
 .message_viewer {
@@ -60,6 +60,10 @@ body {
 }
 .message_viewer-name {
   font-size: 1.75rem;
+  background: #d9d9d980;
+  height: max-content;
+  padding: 0.25rem 0.5rem -205.75rem 2.5rem;
+  border-radius: 2rem;
 }
 .message_currentMessage-container {
   margin-top: -1.5rem;
@@ -86,7 +90,7 @@ body {
   box-sizing: border-box;
   background: var(--light);
   position: absolute;
-  top: 2.5rem;
+  top: 1.5rem;
   left: -2rem;
   border-radius: 1rem 0 0 1rem;
   backdrop-filter: blur(0.75rem);
@@ -97,7 +101,7 @@ body {
   height: 1.5rem;
   background: radial-gradient(ellipse at -50% 0, rgba(0, 0, 0, 0) 0, #0000 74%, var(--light) 75%);
   position: absolute;
-  top: 1rem;
+  top: 0;
   left: -1.5rem;
   backdrop-fiter: blur(0.75rem); 
 }
