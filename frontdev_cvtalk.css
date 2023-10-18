@@ -40,8 +40,8 @@ body {
   display: flex;
 }
 .message_viewer-avatar {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 4.25rem;
+  height: 4.25rem;
   aspect-ratio: 1;
   background: radial-gradient( circle at top right, #0098DA, #0098DA00 ) border-box, radial-gradient( circle at bottom left, #ff1492, #ff149200) border-box;
   box-sizing: border-box;
@@ -67,7 +67,7 @@ body {
 .message_currentMessage-box {
   container: message_currentMessage-box;
   width: calc(100% - 5.5rem);
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
