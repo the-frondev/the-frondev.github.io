@@ -7,6 +7,9 @@
 
 body {
   margin: 0;
+  background: var(--dark);
+  width: 100vw;
+  height: 100vh;
 }
 
 .messages_container {
@@ -50,7 +53,6 @@ body {
 }
 .message_viewer-avatarImg {
   width: 4rem;
-  height: 4rem;
   box-sizing: border-box;
   aspect-ratio: 1;
   border-radius: 50%;
@@ -119,11 +121,11 @@ body {
   object-fit: contain;
 }
 
-.newMessage {
+/* .newMessage {
   animation-name: newMessage;
   animation-duration: 250ms;
   animation-iteration-count: 1;
-}
+} */
 
 @keyframes newMessage {
   0% {
@@ -134,11 +136,11 @@ body {
   }
 }
 
-.dieingMessage {
+/* .dieingMessage {
   animation-name: newMessage;
   animation-duration: 2s;
   animation-iteration-count: 1;
-}
+} */
 
 @keyframes dieingMessage {
   0% {
