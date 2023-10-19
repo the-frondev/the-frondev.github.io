@@ -7,9 +7,9 @@
 
 body {
   margin: 0;
-  /* background: var(--dark);
+  background: var(--dark);
   width: 100vw;
-  height: 100vh; */
+  height: 100vh;
 }
 
 p {
@@ -64,7 +64,8 @@ p {
 }
 .message_viewer-name {
   font-size: 1.75rem;
-  background: #d9d9d980;
+  font-weight: bold;
+  background: #18181840;
   height: max-content;
   padding: 0.25rem 0.5rem 0.25rem 2.5rem;
   border-radius: 2rem;
@@ -113,9 +114,9 @@ p {
 }
 .message_currentMessage-otherViewerBadges {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  justify-content: flex-start;
   gap: 0.25rem;
+  margin-right: .5rem;
 }
 .message_currentMessage-text {
   width: 100%;
