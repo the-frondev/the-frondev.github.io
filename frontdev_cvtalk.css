@@ -44,8 +44,8 @@ p {
   display: flex;
 }
 .message_viewer-avatar {
-  width: 4.25rem;
-  height: 4.25rem;
+  width: 4.125rem;
+  height: 4.125rem;
   aspect-ratio: 1;
   background: radial-gradient( circle at top right, #0098DA, #0098DA00 ) border-box, radial-gradient( circle at bottom left, #ff1492, #ff149200) border-box;
   box-sizing: border-box;
@@ -68,7 +68,7 @@ p {
   height: max-content;
   padding: 0.25rem 0.5rem 0.25rem 2.5rem;
   border-radius: 2rem;
-  margin-bottom:0.5rem;
+  margin-bottom:1rem;
 }
 .message_currentMessage-container {
   margin: -1.25rem 0 0 4.5rem;
