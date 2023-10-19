@@ -44,19 +44,19 @@ p {
   display: flex;
 }
 .message_viewer-avatar {
-  width: 4.125rem;
-  height: 4.125rem;
+  width: 4.5rem;
+  height: 4.5rem;
   aspect-ratio: 1;
   background: radial-gradient( circle at top right, #0098DA, #0098DA00 ) border-box, radial-gradient( circle at bottom left, #ff1492, #ff149200) border-box;
   box-sizing: border-box;
   border-radius: 50%;
-  border: 0.5rem solid transparent;
+  border: 0.25rem solid transparent;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .message_viewer-avatarImg {
-  width: 4rem;
+  width: 100%;
   box-sizing: border-box;
   aspect-ratio: 1;
   border-radius: 50%;
