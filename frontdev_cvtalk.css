@@ -7,9 +7,9 @@
 
 body {
   margin: 0;
-  /* background: var(--dark);
+  background: var(--dark);
   width: 100vw;
-  height: 100vh; */
+  height: 100vh;
 }
 
 p {
@@ -72,6 +72,7 @@ p {
   background: #0e0e0e;
 }
 .message_viewer-name {
+  --color: currentColor;
   font-size: 1.75rem;
   font-weight: bold;
   background: #212121cc;
@@ -84,19 +85,10 @@ p {
   width: 100%;
   box-sizing: border-box;
   margin-top: 0.5rem;
+  filter: drop-shadow(0.125rem 0.125rem 0.25rem #0098da80);
 }
-.message_currentMessage-container::before {
-  content: "";
-  width: 2rem;
-  height: 1.5rem;
-  box-sizing: border-box;
-  background: radial-gradient(ellipse at 80% 0, transparent 70%, #212121cc 72%);
-  position: absolute;
-  top: -1.5rem;
-  left: 0;
-}
+
 .message_currentMessage-box {
-  container: message_currentMessage-box;
   width: 100%;
   padding: 0.5rem 1rem;
   box-sizing: border-box;
@@ -105,6 +97,17 @@ p {
   gap: 0.5rem;
   background: #212121cc;
   border-radius: 0 1rem 1rem 1rem;
+  /* box-shadow: 0.25rem 0.25rem 0.25rem  #0098da80; */
+}
+.message_currentMessage-box::before {
+  content: "";
+  width: 2rem;
+  height: 1.5rem;
+  box-sizing: border-box;
+  background: radial-gradient(ellipse at 80% 0, transparent 70%, #212121cc 73%);
+  position: absolute;
+  top: -1.5rem;
+  left: 0;
 }
 .message_currentMessage-otherViewerBadges {
   display: flex;
