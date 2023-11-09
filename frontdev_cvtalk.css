@@ -157,7 +157,6 @@ p {
 .broadcaster .message_currentMessage-box {
   flex-direction: row-reverse;
   border-radius: 4rem 0 2rem 4rem;
-  border-width: 3px;
 }
 .broadcaster .message_currentMessage-box::before {
   content: "";
