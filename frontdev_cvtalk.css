@@ -30,18 +30,27 @@ p {
 }
 .message {
   width: 100%;
-  margin-bottom: 1rem;
+  position: relative;
 }
 .message_userBadge {
   width: 1.5rem;
+  height: 1.5rem;
+  aspect-ratio: 1;
 }
 .message_userBadge-primary {
-  position: relative;
-  margin: 0 0 -2rem 5rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
   border-radius: 50%;
+  opacity: 0.35;
 }
 .message_viewer {
   display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 .message_viewer-avatar {
   width: 4.5rem;
@@ -65,38 +74,26 @@ p {
 .message_viewer-name {
   font-size: 1.75rem;
   font-weight: bold;
-  background: #18181840;
+  background: #212121cc;
   height: max-content;
-  padding: 0.25rem 0.5rem 0.25rem 2.5rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 2rem;
-  margin-bottom:1.5rem;
 }
 .message_currentMessage-container {
-  margin: -1.25rem 0 0 4.5rem;
   position: relative;
-  width: calc(100% - 5.5rem);
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0.5rem;
 }
 .message_currentMessage-container::before {
   content: "";
   width: 2rem;
   height: 1.5rem;
   box-sizing: border-box;
-  background: var(--light);
+  background: radial-gradient(ellipse at 80% 0, transparent 70%, #212121cc 72%);
   position: absolute;
-  top: 1.9rem;
-  left: -1.9rem;
-  border-radius: 1rem 0 0 1rem;
-  backdrop-filter: blur(0.75rem);
-}
-.message_currentMessage-container::after {
-  content: "";
-  width: 1.5rem;
-  height: 1.5rem;
-  background: radial-gradient(ellipse at -50% 0, rgba(0, 0, 0, 0) 0, #0000 74%, var(--light) 75%);
-  position: absolute;
-  top: 0.5rem;
-  left: -1.4rem;
-  backdrop-fiter: blur(0.75rem); 
+  top: -1.5rem;
+  left: 0;
 }
 .message_currentMessage-box {
   container: message_currentMessage-box;
@@ -106,23 +103,21 @@ p {
   display: flex;
   justify-content: space-between;
   gap: 0.5rem;
-  background: var(--light);
-  backdrop-filter: blur(0.75rem);
-  /* border-radius: 2.5rem 4rem 4rem 0; */
-  clip-path: inset(0 0 0 0 round 2rem 6rem 6rem 0);
-  position: relative;
+  background: #212121cc;
+  border-radius: 0 1rem 1rem 1rem;
 }
 .message_currentMessage-otherViewerBadges {
   display: flex;
   justify-content: flex-start;
-  gap: 0.25rem;
+  align-items: center;
+  gap: 0.5rem;
   margin-right: .5rem;
 }
 .message_currentMessage-text {
   width: 100%;
   box-sizing: border-box;
   font-size: 1.75rem;
-  color: var(--dark);
+  color: var(--light);
   display: flex;
   flex-wrap: wrap;
   gap: 0.125rem;
